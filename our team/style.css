@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+    width: 100%;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-container {
+    margin-bottom: 50px;
+}
+
+.title-container h1 {
+    font-size: 24px;
+    color: #3777aa;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title-container .underline {
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #3777aa;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card-container .card {
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.contact-btn {
+    color: white;
+    background-color: #3777aa;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.contact-btn:hover {
+    background-color: #2284d3;
+}
+
+.card h1 {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.card .team-member {
+    text-transform: capitalize;
+}
+
+
+@media screen and (min-width:768px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media  screen and (min-width:992px){
+    .card-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

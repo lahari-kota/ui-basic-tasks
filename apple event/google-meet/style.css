@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+.main-container {
+    width: 100%;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-container .heading {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.title-container .para {
+    text-align: center;
+    color: rgb(162, 236, 236);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.card-container {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-side {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.left-side img {
+    width: 100%;
+    height: 100%;
+}
+
+.right-side {
+    width: 100%;
+    background-color: azure;
+    padding: 2px;
+}
+
+.details {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.details button {
+    padding: 20px 40px;
+    border: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.5s linear;
+    background-color: whitesmoke;
+}
+
+.details button:hover {
+    background-color: white;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h3 {
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.google-icon {
+    width: 100px !important;
+    height: 100px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
